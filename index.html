@@ -24,6 +24,7 @@
             background-color: #ff6b81;
             transform: rotate(-45deg);
             animation: float 5s infinite;
+            z-index: -1;
         }
 
         .heart::before,
@@ -86,6 +87,13 @@
             margin-bottom: 15px;
         }
 
+        .special-message {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            white-space: pre-line;
+        }
+
         input[type="password"] {
             padding: 8px;
             border: 1px solid #ddd;
@@ -117,12 +125,27 @@
         <p>Enter the password to unlock the photo and message:</p>
         <input type="password" id="password" placeholder="Enter password">
         <button onclick="checkPassword()">Submit</button>
-        <p class="hint">abc</p>
+        <p class="hint">Hint: abc</p>
     </div>
 
     <div class="photo-message" id="photo-message">
         <img src="day1.jpg" alt="Photo" class="photo">
-        <p class="special-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione error ipsa possimus ad. Vitae illum quia deleniti laudantium cum placeat, earum rerum tempora officiis ducimus quas, autem non, neque et.You've unlocked the special message! ❤️</p>
+        <p class="special-message">
+            This photo, a spark, where it all began,
+            Who knew what fate had planned for us then?
+            A playful glance, a teasing word,
+            The start of something unheard.
+
+            Flirting turned to whispers, soft and sweet,
+            Moments where our hearts would meet.
+            From laughter to love, step by step,
+            A bond so strong, it’s tightly kept.
+
+            Who knew this spark would light the way,
+            To a love that grows with every day?
+            From that first smile to where we are,
+            Inseparable now, my guiding star.
+        </p>
     </div>
 
     <script>
