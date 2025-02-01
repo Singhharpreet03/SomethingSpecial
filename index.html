@@ -107,6 +107,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px;
         }
 
         button:hover {
@@ -122,35 +123,47 @@
     <div class="heart" style="top: 50%; left: 30%; animation-delay: 3s;"></div>
 
     <div class="content" id="password-section">
-        <p>Enter the password to unlock Day6:</p>
+        <p>Enter the password to unlock Day7 and 8:</p>
         <input type="password" id="password" placeholder="Enter password">
         <button onclick="checkPassword()">Submit</button>
-        <p class="hint">Hint: I drink the sun and dance in the breeze,
-            Dressed in colors that love to please.
-            From bud to bloom, I grow with grace,
-            A gift of beauty in nature’s embrace.
-            What am I?</p>
+        <p class="hint">Hint: "I can take you places, though I never move,
+            With every page, new lives to prove.
+            I hold secrets, sorrow, love, and fright,
+            My words can dance in black and white.
+            Though I end, I can start anew,
+            A journey waiting, just for you.
+            What am I?"
+            
+            </p>
     </div>
 
     <div class="photo-message" id="photo-message">
-        <img src="day6.jpg" alt="Photo" class="photo">
-        <p class="special-message">
-            Our first date in a garden so wide, 🌸🌿
-            Where colors bloomed on every side.
-            Roses, lilies, tulips too,
-            Yet none as radiant as you.
-
-            You gazed at flowers, lost in delight, 🌺✨
-            But my eyes stayed on a lovelier sight.
-            For every petal, bright and true,
-            Still felt dull when placed near you.
-
-            In that moment, soft and sweet, 💕
-            Nature bowed at your feet.
-            The garden bloomed, the world stood still,
-            And my heart whispered, "This is real."
+        <img src="day8.jpg" alt="Photo" class="photo">
+        <p class="special-message">Day 7 
+            Just like this photo, as you gaze with glee,
+            At fishes swimming wild and free. 🐠✨
+            There are many in the endless sea,
+            But only one that’s meant for me.
             
-        </p>
+            You are the one, my heart’s true wish,
+            The rarest, most beautiful fish. 💙
+            In this vast ocean, deep and wide,
+            You're the only one I want by my side.</p>
+        <button onclick="showNextMessage()">Next</button>
+    </div>
+
+    <div class="photo-message hidden" id="next-message">
+        <img src="day7.jpg" alt="Photo" class="photo">
+        <p class="special-message">Day 8
+            Even if you look at me like this,
+            With silent words I wouldn’t miss. ✨
+            Your eyes, so deep, so full of love,
+            A gaze as soft as skies above. 💙
+            
+            This stare of yours, it holds me still,
+            A quiet spark, a gentle thrill. 💫
+            And every time our eyes have met,
+            My heart has melted—no regret. ❤️</p>
     </div>
 
     <script>
@@ -159,12 +172,17 @@
             const passwordSection = document.getElementById('password-section');
             const photoMessage = document.getElementById('photo-message');
 
-            if (passwordInput === 'flower') {
+            if (passwordInput === 'novel') {
                 passwordSection.classList.add('hidden');
                 photoMessage.style.display = 'block';
             } else {
                 alert('Incorrect password! Try again.');
             }
+        }
+
+        function showNextMessage() {
+            document.getElementById('photo-message').style.display = 'none';
+            document.getElementById('next-message').style.display = 'block';
         }
     </script>
 </body>
