@@ -123,33 +123,34 @@
     <div class="heart" style="top: 50%; left: 30%; animation-delay: 3s;"></div>
 
     <div class="content" id="password-section">
-        <p>Enter the password to unlock Day7 and 8:</p>
+        <p>Enter the password to unlock Day9:</p>
         <input type="password" id="password" placeholder="Enter password">
         <button onclick="checkPassword()">Submit</button>
-        <p class="hint">Hint: "I can take you places, though I never move,
-            With every page, new lives to prove.
-            I hold secrets, sorrow, love, and fright,
-            My words can dance in black and white.
-            Though I end, I can start anew,
-            A journey waiting, just for you.
-            What am I?"
+        <p class="hint">Hint: "I seek the truth, through shadow and crime,
+A puzzle unfolds, one clue at a time.
+A woman lost, a case so grim,
+The city's heart beats dark and dim.
+Yet in the chase, fate takes my hand,
+A family found—yet like grains of sand,
+She slips away, though once so near,
+Leaving behind a trail of tears.
+Who am I?" 
             
             </p>
     </div>
 
     <div class="photo-message" id="photo-message">
-        <img src="day8.jpg" alt="Photo" class="photo">
-        <p class="special-message">Day 7 
-            Just like this photo, as you gaze with glee,
-            At fishes swimming wild and free. 🐠✨
-            There are many in the endless sea,
-            But only one that’s meant for me.
-            
-            You are the one, my heart’s true wish,
-            The rarest, most beautiful fish. 💙
-            In this vast ocean, deep and wide,
-            You're the only one I want by my side.</p>
-        <button onclick="showNextMessage()">Next</button>
+        <img src="IMG_20240321_155230.jpg" alt="Photo" class="photo">
+        <p class="special-message">Day 9
+            Our first Holi, simple yet bright,
+Colors on our faces, pure delight. 🎨✨
+Laughter echoed, hearts so free,
+A moment that felt like destiny.
+
+A small celebration, just we two,
+Yet our smiles soared, the sky so blue. ☀️💛
+It wasn’t grand, it wasn’t loud,
+But it was special—we were proud.</p>
     </div>
 
     <div class="photo-message hidden" id="next-message">
@@ -172,7 +173,7 @@
             const passwordSection = document.getElementById('password-section');
             const photoMessage = document.getElementById('photo-message');
 
-            if (passwordInput === 'novel') {
+            if (passwordInput === 'harold') {
                 passwordSection.classList.add('hidden');
                 photoMessage.style.display = 'block';
             } else {
